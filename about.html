@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+      <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+      <link href="styles.css" rel="stylesheet">
+      <title>About</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+    <body class ="format">
+    <!--The sites logo in a banner-->
+    <div class="background">
+      <img class="aligncenter" style="width:220px;height:200px" src='Logo.PNG' alt="Logo">
+    </div>
+
+
+  <!--The navigation bar at the top of the screen-->
+  <nav>
+    <ul class="nav nav-fill">
+      <li class="nav-item">
+        <a class="nav-link active" href="home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="articles.html">News articles</a>
+      </li>
+    </ul>
+  </nav>
+  <br>
+<!--The page is divided into columns using bootstrap-->
+<!--A carousel of images on one side and a drop down accordian on the other-->
+  <p>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6" style="background-color:#637373;">
+          <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+              <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-interval="5000">
+              <img src="London.jpg" class="image" alt="London" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <div class="carousel-item" data-interval="5000">
+              <img src="Harbour.jpg" class="image" alt="Harbour" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <div class="carousel-item" data-interval="5000">
+              <img src="Canada.jpg" class="image" alt="Canada" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-6" style="background-color:#637373;">
+        <br>
+
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="title" type="button" style="width:300px;height:50px" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Professional background
+              </button>
+            </h2>
+          </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+      Hello! Thank you for coming, let me introduce myself. I have been working as a Robotic Process Automation (RPA) Consultant for Propel Consult for two years now. As of July this year, I am the lead developer for our sister company, AutoMate, tailored for SMEs. We’re a small company of just 10 people, and earlier this year were awarded the number one partner in Europe by Automation Anywhere, the largest RPA vendor globally.          </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="title" type="button" style="width:300px;height:50px" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Social
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+      Outside of work I love weightlifting- I’m very proud of the fact I can hip thrust 3.5 times my body weight, but my favourite thing to do is go to the pub.          </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="title" type="button" style="width:300px;height:50px" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    About the blog
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+      As a product of the extra time I’ve been afforded over the past year and a half, I’ve been trying out some different coding languages. After learning html and CSS from Harvard’s Intro to computer science course, I decided to make this blog. When I’ve looked for email chains and podcasts about relevant news in the field in the past I’ve always been underwhelmed by how mechanical and dull it all is. This blog is a less formal, chattier look at what’s been going on in the world of RPA. I hope you find my insights interesting - if so, I’d love to hear!        </div>
+            </div>
+          </div>
+
+    <!--A button with a link to LinkedIn-->
+     <br>
+      <button class="title" style="width:300px;height:50px" onclick="window.location.href='https://www.linkedin.com/in/fleur-abel-44ab2319a/'"><img src="Linkedin.png" alt="Linkedin Logo" style="width:30px;height:30px;">   Add me on LinkedIn!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
