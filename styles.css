@@ -1,0 +1,386 @@
+/*Formatting the caro class*/
+.caro
+{
+    opacity: 0.5;
+}
+
+/*Formatting the main body*/
+body, html
+{
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*Formatting the imgbox class*/
+.imgbox
+{
+    display: grid;
+    height: 100%;
+}
+
+/*Formatting the center-fit class*/
+.center-fit
+{
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+/*Formatting the nav*/
+nav
+{
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    height:40px;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    display: block;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0;
+    background-color: #C1CECE;
+}
+
+/*Formatting each nav item*/
+.nav-item
+{
+    background-color: #C1CECE;
+    color: black;
+    font-size: 18px;
+}
+
+/*Formatting each nav link*/
+.nav-link
+{
+    font-size: 18px;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+/*Formatting the container class*/
+.container
+{
+    text-align: justify;
+    color: black;
+}
+
+/*Formatting the buttons*/
+button
+{
+    background-color: #ffeadb;
+    color: black;
+    border-radius: 8px;
+    font-size: 10px;
+    margin: 2px 2px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*Formatting the aligncenter class*/
+.aligncenter
+{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/*Formatting the video class*/
+.video
+{
+   margin-left: auto;
+   margin-right: auto;
+   display: block
+}
+
+/*Formatting the carousel class*/
+.carousel
+{
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+/*Formatting the format class*/
+.format
+{
+    background-color:#FFFFFF;
+    color: black;
+    font-family: 'Noto Sans';
+    font-size: 2em;
+}
+
+/*Formatting the format_body class*/
+.format_col
+{
+    background-color:#ffeadb;
+}
+
+/*Formatting the search bar*/
+#mySearch {
+  width: 80%;
+  font-size: 1em;
+  font-family: 'Noto Sans';
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin: 25px 25px;
+}
+
+/*Formatting the search bar items*/
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*Formatting the search bar links*/
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+/*Formatting the search bar links when hovered over*/
+#myMenu li a:hover {
+  background-color: #ffeadb;
+}
+
+/*Formatting the learn class*/
+.learn
+{
+  width: 100%;
+  text-align: center;
+  padding: 50px;
+  font-family: 'Noto Sans';
+  font-size: 1em;
+  background-image: url('pattern.png');
+}
+
+/*Formatting the background class*/
+.background
+{
+    background-image: url('pattern.png');
+}
+
+/*Formatting the card class*/
+.card > .card-header
+{
+    background-color: #ffeadb;
+}
+
+/*Formatting the body of the card class*/
+.card-body
+{
+    background-color:#ffeadb;
+    font-size: 0.8em;
+    color: black;
+    font-family: 'Noto Sans';
+}
+
+/*Formatting the accordian class*/
+.accordion
+{
+     font-family: 'Noto Sans';
+    font-size: 1em;
+    background-color:#637373;
+    text-align: center;
+}
+
+/*Formatting the title class*/
+.title
+{
+    font-family: 'Noto Sans';
+    font-size: 0.7em;
+    background-color:#ffeadb;
+    text-align: center;
+}
+
+/*Formatting the col class*/
+.col
+{
+    text-align: left;
+}
+
+/*Formatting the canter class*/
+.center
+{
+  margin: auto;
+  width: 80%;
+  background-color:white;
+  padding: 10px;
+}
+
+/*Formatting the article class*/
+.article
+{
+  margin: auto;
+  width: 80%;
+  background-color:white;
+  padding: 10px;
+  font-size: 0.5em;
+}
+
+/*Formatting all h1*/
+h1
+{
+        text-align: center;
+        font-size: 25px;
+}
+
+/*Formatting a links*/
+a:link, a:visited {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/*Formatting the jumbotron class*/
+.jumbotron
+{
+    position:relative;
+    background-color: #E7E7DD;
+    color: black;
+
+}
+
+/*Formatting the oxygen class*/
+.oxygen
+{
+  background-color: #E7E7DD;
+  border-radius: 4px;
+  border: 2px solid black;
+  color: black;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/*Formatting the linked class*/
+.linked
+{
+     text-align: center;
+    background-color: white;
+   padding: 15px 32px;
+}
+
+/*Formatting the body class*/
+.body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	background: #222222;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Roboto', sans-serif;
+}
+
+/*Formatting the wrapper class*/
+.wrapper
+{
+	background: white;
+	border-radius: 10px;
+	width: 500px;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+/*Formatting the wrapper from input*/
+.wrapper .form input
+{
+	background: #222222;
+	color: white;
+	font-size: 15px;
+	width: 450px;
+	border-radius: 20px;
+	padding: 10px;
+	border: none;
+	outline: none;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+/*Formatting the wrapper form text*/
+.wrapper .form textarea
+{
+	background: #222222;
+	color: white;
+	font-size: 15px;
+	width: 450px;
+	border-radius: 20px;
+	padding: 10px;
+	border: none;
+	outline: none;
+	resize: none;
+}
+
+/*Formatting the wrapper form button*/
+.wrapper .form .btn
+{
+	background: #222222;
+	color: white;
+	font-size: 15px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 10px;
+	width: 200px;
+	border-radius: 20px;
+	margin: 0 auto;
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	opacity: 0.8;
+	transition: 0.3s all ease;
+}
+
+/*Formatting the wrapper form button when hovered*/
+.wrapper .form .btn:hover
+{
+	opacity: 1;
+}
+
+/*Formatting the content class*/
+.content
+{
+	text-align: center;
+	background: royalblue;
+	color: white;
+	padding: 10px;
+	width: 500px;
+	border-radius: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+/*Formatting p in content class*/
+.content p
+{
+	margin-bottom: 15px;
+	width: 450px;
+}
+
+/*Formatting the popular class*/
+.popular
+{
+    text-align: center;
+    background-color: #C1CECE;
+}
