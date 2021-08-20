@@ -2,57 +2,86 @@
 
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-        <link href="styles.css" rel="stylesheet">
-        <title>Oxygen bot</title>
+      <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+      <link href="styles.css" rel="stylesheet">
+      <title>Home</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!--Written with help from a contributer on stackoverflow: https://stackoverflow.com/questions/59268100/learning-how-to-create-a-search-menu-to-filter-links-->
+      <script>
+      // This function carries out the search for article portion of code
+      function myFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("mySearch");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myMenu");
+        li = ul.getElementsByTagName("li");
+
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+          }
+        }
+      </script>
     </head>
 
     <body class ="format">
+      <!--The jumbotron advertising a new article at the top of the screen-->
+      <div class="jumbotron" >
+        <div class="container">
+          <p class="lead">Interested to read my latest article on how automation is helping navigate the NHS through Covid-19?</p>
+           <img src="Oxygen_in_phone.PNG" class="justify" alt="Phone" style="width:120px;height:200px">
+            <a class="oxygen" href="Oxygen.html" role="button">Read more here</a>
+      </div>
+    </div>
     <!--The sites logo in a banner-->
     <div class="background">
       <img class="aligncenter" style="width:220px;height:200px" src='Logo.PNG' alt="Logo">
     </div>
-      <!--The navigation bar at the top of the screen-->
-      <nav>
-          <ul class="nav nav-fill">
-            <li class="nav-item">
-              <a class="nav-link active" href="home.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="articles.html">News articles</a>
-            </li>
-          </ul>
-       </nav>
-       <br>
-    <!--The title banner to the article as an image-->
-    <img src="Oxygen_back.png" alt="background" style="width:100%;height:100%;object-fit:cover;">
-    <!--The text body of the article-->
-    <div class="format_col">
-      <div class="article">
-  Our reel of statistics about Robotic Process Automation (RPA) is great: it’s the fastest growing technology in the world; that by 2027 the industry is predicted to be worth $10.7 billion; and that it can save companies hundreds of thousands of pounds. However, these are not the only figures that we should be focusing on. Whilst in business monetary savings are hugely important, RPA can go far beyond that. It can conjure up more hours in the day, eliminates human error, and in turn it can save lives.<br><br>
+    <!--The navigation bar at the top of the screen-->
+    <nav>
+      <div class="container">
+        <ul class="nav nav-fill">
+          <li class="nav-item">
+            <a class="nav-link active" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="articles.html">News articles</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--A video that plays automatically when the site is loaded-->
+      <video class="video" style="width:70%;height:50%" autoplay>
+        <source src="Story.mp4" type="video/mp4">
+      </video>
+      <!--The search bar for an article corresponding to the above script code-->
+      <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Have an article in mind?" title="Type">
+      <ul id="myMenu">
+        <li><a href="Oxygen.html">The Oxygen Bot – Automating the NHS</a></li>
+        <li><a href="McClaren">Who is the best McLaren driver of all time?</a></li>
+      </ul>
+      <!--Linked titles directing the user to popular posts-->
+      <div class="popular">
+        <h1>Popular Posts</h1>
+            <a href="Oxygen.html">The Oxygen Bot – Automating the NHS</a><br>
+  					<a href="McClaren">Who is the best McLaren driver of all time?</a>
+      </div>
+      <!--A link to my LinkedIn-->
+      <div class="learn">Hi! I'm Fleur, it's nice to meet you.
+        <a href="about.html" target="_blank">Learn more</a>
+      </div>
 
-As we are all aware, 2020 has been rocked by the COVID-19 pandemic, and the healthcare industry has been heavily impacted by this. We applauded the efforts of our healthcare workers, and rightly so! But as well-meaning and appreciative as banging on saucepans in our slippers was, imagine if we could give them more than that, imagine if we could give them back time.<br><br>
-
-One hospital that has pioneered such technological innovation is Northampton General Hospital. As one of the largest employment centres in the region, servicing 700,000 people, the sustainable operation of this facility throughout the pandemic has been essential. Within hours of their first planning meeting, a bot to autonomously streamline workflow and maximize operational efficiencies had been created.<br><br>
-
-The pandemic has led to a spike in the number of patients requiring oxygen support to help them breathe. Northampton General Hospital possess two oxygen tanks that supply their ventilation machines. Until the introduction of automation in partnership with Automation Anywhere, the monitoring of these tanks to ensure each patient had sufficient oxygen was a manual process. A doctor or nurse had to log into the system hourly and physically collect the readings from the tank. Fast-forward to current day, with the help of automation, this data is extracted, the flow rates are calculated, and oxygen levels monitored non-stop, all without human intervention. At a time when resources were being stretched to their maximum, and every nurse and doctor was flung into an ‘all-hands-on-deck’ frenzy, automation did the impossible; it gave time back to these key workers who so desperately needed it. To be exact, 1,500 working hours a year (that’s a staggering 62 days!), time which can now be redirected to other aspects of the job. Not only has the bot facilitated the reallocation of time, but the bots perform the oxygen monitoring more accurately than the professionals ever could. With the late nights and constant high pressure demands striped away, the inevitable human error that goes hand in hand with such a job is alleviated.<br><br>
-
- <img class="aligncenter" src='Vent.jpg' alt="Oxygen vent">
-<br>
-Northampton General Hospital is not alone in this call for innovation. Newcastle Upon Tyne Hospital, with 14,000 employees, has also saved 4,000 working hours each year by introducing automation. The hospital made the leap to wheel out RPA to take care of administrative processes such as processing staff records, system maintenance and onboarding - the records for which can be seamlessly transferred between NHS organizations. Through doing so they have been able to minimise cost, improve employee morale, and most importantly optimise the healthcare workers time to better focus on caring for their patients. This move was not introduced by a basement full of computers, nor was it by employees with the luxury of excess spare time for out-of-office training. The integration was actively brought in by hospital staff, each upskilling as bot creators to accelerate the integration. Due to the success of the innovation, they are currently looking to scale automation into their cancer services. This bot will process cardiac catheterization and lab data, and will save each consultant four hours a day!<br><br>
-
-Another prong of the Healthcare response has been to issue mass COVID-19 testing. The UK National Health Service reels out thousands of COVID-19 tests each day. This process involves logging an E28 form for every test. The mass influx of tests combined with the unavoidability of human error through manual form filling serves to lengthen the delays to prognosis. Furthermore, in the eventuality that a test is confirmed positive, a series of forms must be filed for the World Health Organization, some daily, to help inform global policy. A bot has been introduced that takes care of processing tens of thousands of these form pages each day. It can extract and process data from these forms and can also read handwriting and checkboxes.<br><br>
-
-So there you have it, if a PowerPoint full of ROI percentages, future growth graphs and case studies of automation in your HR department doesn’t peak your interest (and let’s face it, we get it), then maybe this can. By maximising organizational efficiency where it’s needed the most - automation is saving lives.<br><br>
-
-    </div>
-  </div>
-
-
-    </body>
+      </body>
 </html>
